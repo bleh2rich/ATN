@@ -19,7 +19,10 @@
 ```
  loadstring(game:HttpGet(('https://raw.githubusercontent.com/bleh2rich/ATN/refs/heads/main/ATNWattyHub.lua'),true))()
 ```
-
+- Loadstring ATN Wattyhub SOLARA WORKING VERSION
+```
+ loadstring(game:HttpGet(('https://raw.githubusercontent.com/bleh2rich/ATN/refs/heads/main/Solara/SolaraATN.lua'),true))()
+```
 
 ``` made By Dood3 ```
 

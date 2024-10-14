@@ -24,6 +24,19 @@
  loadstring(game:HttpGet(('https://raw.githubusercontent.com/bleh2rich/ATN/refs/heads/main/Solara/SolaraATN.lua'),true))()
 ```
 
+
+> Premium
+- Loadstring ATN Wattyhub Premium
+```
+ loadstring(game:HttpGet(('https://raw.githubusercontent.com/bleh2rich/ATN/refs/heads/main/PremiumATN/PremiumATN.lua'),true))()
+```
+- Loadstring ATN Wattyhub Premium SOLARA WORKING VERSION
+```
+ loadstring(game:HttpGet(('https://raw.githubusercontent.com/bleh2rich/ATN/refs/heads/main/PremiumATN/SolaraPremium.lua'),true))()
+```
+
+
+
 ``` made By Dood3 ```
 
 > NEED A EXECUTOR?

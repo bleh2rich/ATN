@@ -46,7 +46,6 @@
 
 - Soon to be added will be listed below
 ```
-- Silent aim
 
 - Item ESP
 

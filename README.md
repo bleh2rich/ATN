@@ -9,7 +9,7 @@
 # DISCORD SERVER INVITE discord.gg/zbgRZxNRKa
 - 1/2/2025 UPDATE LOG
 
-> I quit development I might just make it so it works with atn and never update it again I get harassed too much for making the script the owner of the game harasses me for this im just trying to live life and ignore when I made scripts for october
+> I quit development I might just make it so it works with atn and never update it again I get harassed too much for making the script the owner of the game harasses me for this im just trying to live life and ignore when I made scripts in october im tired of getting harassed and would rather continue doing my usual stuff without having a community of people hate me for one small thing I did 3 months ago
 
 - 10/5/2024 UPDATE LOG
   

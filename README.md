@@ -7,7 +7,9 @@
 <p align= "center"> <kbd> <img  src="https://i.imgur.com/ylRrPFi.png"width="750"> </kbd><br><br>
 
 # DISCORD SERVER INVITE discord.gg/zbgRZxNRKa
-    
+- 1/2/2025 UPDATE LOG
+
+> I quit development I might just make it so it works with atn and never update it again I get harassed too much for making the script the owner of the game harasses me for this im just trying to live life and ignore when I made scripts for october
 
 - 10/5/2024 UPDATE LOG
   

@@ -518,7 +518,7 @@ end)
 
 
 local Window = Library:CreateWindow({
-   Title = 'ATN | Bleh2rich | V7.0 | Solara Paid Version',
+   Title = 'ATN | Bleh2rich | V7.0 | Paid Version',
     Center = true,
     AutoShow = true,
     TabPadding = 8,
@@ -1611,6 +1611,85 @@ end)
 
 
 
+local Visual = Tabs.Visuals:AddLeftGroupbox("ESP Exploits")
+ESP:Load()
+ESP.options.outOfViewArrows = false
+ESP.options.names = false
+ESP.options.boxes = false
+ESP.options.healthBars = false
+ESP.options.healthText = false
+ESP.options.distance = false
+ESP.options.chams = false
+ESP.options.teamColor = true
+ESP.options.outOfViewArrowsFilled = false
+ESP.options.outOfViewArrowsOutline = false
+
+Visual:AddToggle('Arrows', {
+    Text = 'ESP Arrows',
+    Default = false,
+    Tooltip = 'Creates visual arrows pointing to players'
+})
+Toggles.Arrows:OnChanged(function()
+    ESP.options.outOfViewArrows = Toggles.Arrows.Value
+    ESP.options.outOfViewArrowsFilled = Toggles.Arrows.Value
+    ESP.options.outOfViewArrowsOutline = Toggles.Arrows.Value
+end)
+Visual:AddToggle('Names', {
+    Text = 'ESP Names',
+    Default = false,
+    Tooltip = 'Creates visual text displaying the players name'
+})
+Toggles.Names:OnChanged(function()
+    ESP.options.names = Toggles.Names.Value
+end)
+Visual:AddToggle('Boxes', {
+    Text = 'ESP Boxes',
+    Default = false,
+    Tooltip = 'Creates visual boxes around players'
+})
+Toggles.Boxes:OnChanged(function()
+    ESP.options.boxes = Toggles.Boxes.Value
+end)
+Visual:AddToggle('HealthBars', {
+    Text = 'ESP Health Bars',
+    Default = false,
+    Tooltip = 'Creates visual health bar near the player'
+})
+Toggles.HealthBars:OnChanged(function()
+    ESP.options.healthBars = Toggles.HealthBars.Value
+end)
+Visual:AddToggle('HealthText', {
+    Text = 'ESP Health Text',
+    Default = false,
+    Tooltip = 'Creates visual text that displays the players health'
+})
+Toggles.HealthText:OnChanged(function()
+    ESP.options.healthText = Toggles.HealthText.Value
+end)
+Visual:AddToggle('Distance', {
+    Text = 'ESP Distance',
+    Default = false,
+    Tooltip = 'Creates visual text that displays the players distance'
+})
+Toggles.Distance:OnChanged(function()
+    ESP.options.distance = Toggles.Distance.Value
+end)
+Visual:AddToggle('Tracers', {
+    Text = 'ESP Tracers',
+    Default = false,
+    Tooltip = 'Creates visual lines that point to players'
+})
+Toggles.Tracers:OnChanged(function()
+    ESP.options.tracers = Toggles.Tracers.Value
+end)
+Visual:AddToggle('Chams', {
+    Text = 'ESP Chams',
+    Default = false,
+    Tooltip = 'Creates visual lines around the players'
+})
+Toggles.Chams:OnChanged(function()
+    ESP.options.chams = Toggles.Chams.Value
+end)
 
 local Visual2 = Tabs.Visuals:AddRightGroupbox("Vision")
 

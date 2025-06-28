@@ -31,10 +31,11 @@
 
 - Soon to be added will be listed below
 ```
+- More efficient autofarm
 
-- Item ESP
+- secret DLC
 
-- Cargo Autofarm
+- grab all melee
 ```
 
 

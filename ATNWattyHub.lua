@@ -59,7 +59,7 @@ And hello anyone seeing this.
 
 ]]
 
-local link = "discord.gg/K823qJDKAF"
+local link = "discord.gg/gd8Vfa5kh5"
 local function kick_player()
     local message = "Key invalid or key not found, Please join the discord server to retrieve your key, it has been set to your clipboard. " .. link
     if setclipboard then

@@ -59,4 +59,33 @@ And hello anyone seeing this.
 
 ]]
 
--- glup
+local link = "discord.gg/K823qJDKAF"
+local function kick_player()
+    local message = "Key invalid or key not found, Please join the discord server to retrieve your key, it has been set to your clipboard. " .. link
+    if setclipboard then
+        setclipboard("https://" .. link)
+    end
+    game:GetService("Players").LocalPlayer:Kick(message)
+end
+local api = loadstring(game:HttpGet("https://sdkapi-public.luarmor.net/library.lua"))()
+api.script_id = "301e4b7fecc2d17f1d38d516d5fbdb42"
+if not script_key or script_key == "" then
+    kick_player()
+else
+    local status = api.check_key(script_key)
+    if status.code == "KEY_VALID" then
+        api.load_script()
+    elseif status.code == "KEY_HWID_LOCKED" then
+        kick_player()
+    elseif status.code == "KEY_INCORRECT" then
+        kick_player()
+    elseif status.code == "KEY_INVALID" then
+        kick_player()
+    elseif status.code == "KEY_EXPIRED" then
+        kick_player()
+    elseif status.code == "KEY_BANNED" then
+        kick_player()
+    else
+        kick_player()
+    end
+end

@@ -6,7 +6,7 @@
 </p>
 <p align= "center"> <kbd> <img  src="https://i.imgur.com/ylRrPFi.png"width="750"> </kbd><br><br>
 
-# DISCORD SERVER INVITE discord.gg/zbgRZxNRKa
+# DISCORD SERVER INVITE https://discord.gg/gd8Vfa5kh5
 - 6/28/2025 UPDATE LOG
 
 > Im back and staying
@@ -40,5 +40,5 @@
 
 
 
-> Need Help? Contact Bl_h On Discord
+> Need Help? Contact bl_h_ On Discord
 

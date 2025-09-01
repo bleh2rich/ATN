@@ -67,25 +67,54 @@ local function kick_player()
     end
     game:GetService("Players").LocalPlayer:Kick(message)
 end
+
 local api = loadstring(game:HttpGet("https://sdkapi-public.luarmor.net/library.lua"))()
 api.script_id = "301e4b7fecc2d17f1d38d516d5fbdb42"
+
+local premium_api = loadstring(game:HttpGet("https://sdkapi-public.luarmor.net/library.lua"))()
+premium_api.script_id = "fc3608cd7244b37ab8ccf691066eeb78"
+
 if not script_key or script_key == "" then
     kick_player()
 else
     local status = api.check_key(script_key)
+    
     if status.code == "KEY_VALID" then
         api.load_script()
     elseif status.code == "KEY_HWID_LOCKED" then
-        kick_player()
-    elseif status.code == "KEY_INCORRECT" then
-        kick_player()
-    elseif status.code == "KEY_INVALID" then
-        kick_player()
+        local premium_status = premium_api.check_key(script_key)
+        if premium_status.code == "KEY_VALID" then
+            premium_api.load_script()
+        else
+            kick_player()
+        end
+    elseif status.code == "KEY_INCORRECT" or status.code == "KEY_INVALID" then
+        local premium_status = premium_api.check_key(script_key)
+        if premium_status.code == "KEY_VALID" then
+            premium_api.load_script()
+        else
+            kick_player()
+        end
     elseif status.code == "KEY_EXPIRED" then
-        kick_player()
+        local premium_status = premium_api.check_key(script_key)
+        if premium_status.code == "KEY_VALID" then
+            premium_api.load_script()
+        else
+            kick_player()
+        end
     elseif status.code == "KEY_BANNED" then
-        kick_player()
+        local premium_status = premium_api.check_key(script_key)
+        if premium_status.code == "KEY_VALID" then
+            premium_api.load_script()
+        else
+            kick_player()
+        end
     else
-        kick_player()
+        local premium_status = premium_api.check_key(script_key)
+        if premium_status.code == "KEY_VALID" then
+            premium_api.load_script()
+        else
+            kick_player()
+        end
     end
 end
